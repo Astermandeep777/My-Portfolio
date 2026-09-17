@@ -2,7 +2,20 @@
     <head> 
         <title>My Website</title>  </head>
     <body>
-        <h1>About Me</h1>
+        <img src="images/logo.png" alt="Logo" width="80" height="80"> <br>
+        <div>
+            <nav>
+        <ul>
+            <li><a href="/#">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/projects.html">Projects</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+            </nav>
+        </div>
+
+        <h1>Welcome to My Website</h1>
+
         <p><b>This is a sample website created for demonstration purposes.</b><br> <b>In this Paragraph there is a short introduction about me </b><br>.</p>
         <p>My name is Mandip Sapkota, and I am a web developer with a passion for creating user-friendly websites. I have experience in HTML, CSS, and JavaScript, and I enjoy learning new technologies to enhance my skills.</p>
         
@@ -18,5 +31,21 @@
         </ul>
         <h4>Contact Me</h4>
         <p>If you would like to get in touch with me, please feel free to reach out via email at <a href="mailto:sapkotamandeep4@gmail.com">sapkotamandeep4@gmail.com</a>.</p>
+
+        <form>
+            <input type="text" placeholder="Search..." >
+            <button type="submit">Search</button> <br>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+
+
     </body>
 </html>
