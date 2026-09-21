@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandip Sapkota - Portfolio</title>
+    <!-- Tailwind CSS for modern responsive design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Inter & smooth scroll configuration -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col">
+
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-800 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo Area -->
+            <div class="flex items-center space-x-3">
+                <img src="https://placehold.co/80x80/16a34a/ffffff?text=MS" alt="Logo" class="w-12 h-12 rounded-full object-cover shadow-md border-2 border-brand-500">
+                <span class="font-bold text-lg tracking-tight bg-gradient-to-r from-brand-600 to-emerald-500 bg-clip-text text-transparent">Mandip Sapkota</span>
+            </div>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">About</a>
+                <a href="#projects" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Projects</a>
+                <a href="#skills" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Skills</a>
+                <a href="#education" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Education</a>
+                <a href="#contact" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Contact</a>
+            </nav>
+
+            <!-- Search Bar & Theme Toggle -->
+            <div class="flex items-center space-x-3">
+                <div class="relative hidden lg:block">
+                    <input type="text" id="searchInput" placeholder="Search page..." class="bg-slate-100 dark:bg-slate-800 text-xs rounded-full px-4 py-2 w-48 focus:w-64 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-brand-500 border border-transparent dark:border-slate-700">
+                </div>
+                <button id="themeToggle" class="p-2 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors text-slate-600 dark:text-slate-300" aria-label="Toggle theme">
+                    <!-- Sun icon -->
+                    <svg id="sunIcon" class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    <!-- Moon icon -->
+                    <svg id="moonIcon" class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-20 w-full">
+
+        <!-- About Section -->
+        <section id="about" class="searchable-section pt-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div class="space-y-6">
+                <div class="inline-block px-3 py-1 bg-brand-100 dark:bg-brand-900/40 text-brand-700 dark:text-brand-300 text-xs font-semibold rounded-full uppercase tracking-wider">
+                    Welcome to My Website
+                </div>
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
+                    Hi, I'm <span class="text-brand-600 dark:text-brand-400">Mandip Sapkota</span>
+                </h1>
+                <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+                    This is a professional portfolio website created for demonstration purposes. I am a web developer with a passion for creating user-friendly websites. I have experience in HTML, CSS, and JavaScript, and I enjoy learning new technologies to enhance my skills.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="px-6 py-3 bg-brand-600 hover:bg-brand-700 text-white font-medium rounded-xl shadow-lg shadow-brand-500/20 transition-all">Get in Touch</a>
+                    <a href="#projects" class="px-6 py-3 bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 font-medium rounded-xl transition-all">View Projects</a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="relative w-72 h-72 sm:w-80 sm:h-80 rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800 bg-gradient-to-tr from-brand-500 to-emerald-300 flex items-center justify-center">
+                    <img src="https://placehold.co/400x400/16a34a/ffffff?text=Mandip+Sapkota" alt="Mandip Sapkota" class="w-full h-full object-cover mix-blend-overlay opacity-90">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent flex items-end p-6">
+                        <span class="text-white font-semibold text-lg">Web Developer & Creator</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="searchable-section space-y-8">
+            <div class="border-b border-slate-200 dark:border-slate-800 pb-4">
+                <h2 class="text-3xl font-bold tracking-tight">My Projects</h2>
+                <p class="text-sm text-slate-500 mt-1">Check out some of my featured work and applications.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project Card 1 -->
+                <div class="project-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-full h-40 bg-slate-100 dark:bg-slate-800 rounded-xl mb-4 overflow-hidden flex items-center justify-center text-brand-600 font-bold text-xl">
+                            Portfolio Website
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Project 1: Portfolio Website</h4>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            A personal portfolio website to showcase my background, skills, and projects with a responsive clean layout.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 flex justify-between items-center text-xs font-medium text-brand-600 dark:text-brand-400">
+                        <span>HTML, CSS, JavaScript</span>
+                        <a href="#" class="hover:underline flex items-center gap-1">Live Demo &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="project-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-full h-40 bg-slate-100 dark:bg-slate-800 rounded-xl mb-4 overflow-hidden flex items-center justify-center text-brand-600 font-bold text-xl">
+                            Task Manager
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Project 2: Task Manager App</h4>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            A robust web application to manage daily tasks, track priority lists, and organize productivity workflows.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 flex justify-between items-center text-xs font-medium text-brand-600 dark:text-brand-400">
+                        <span>React, Node.js</span>
+                        <a href="#" class="hover:underline flex items-center gap-1">Live Demo &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="project-card bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-full h-40 bg-slate-100 dark:bg-slate-800 rounded-xl mb-4 overflow-hidden flex items-center justify-center text-brand-600 font-bold text-xl">
+                            Weather Dashboard
+                        </div>
+                        <h4 class="text-xl font-semibold mb-2">Project 3: Weather App</h4>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            A dynamic weather forecasting client rendering real-time meteorological conditions and city search.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-100 dark:border-slate-800 flex justify-between items-center text-xs font-medium text-brand-600 dark:text-brand-400">
+                        <span>JavaScript, API</span>
+                        <a href="#" class="hover:underline flex items-center gap-1">Live Demo &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="searchable-section space-y-6">
+            <div class="border-b border-slate-200 dark:border-slate-800 pb-4">
+                <h3 class="text-3xl font-bold tracking-tight">My Skills</h3>
+                <p class="text-sm text-slate-500 mt-1">Technologies and tools I specialize in.</p>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center shadow-sm hover:border-brand-500 transition-colors">
+                    <span class="font-semibold text-lg">HTML</span>
+                </div>
+                <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center shadow-sm hover:border-brand-500 transition-colors">
+                    <span class="font-semibold text-lg">CSS</span>
+                </div>
+                <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center shadow-sm hover:border-brand-500 transition-colors">
+                    <span class="font-semibold text-lg">JavaScript</span>
+                </div>
+                <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center shadow-sm hover:border-brand-500 transition-colors">
+                    <span class="font-semibold text-lg">React</span>
+                </div>
+                <div class="p-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl text-center shadow-sm hover:border-brand-500 transition-colors">
+                    <span class="font-semibold text-lg">Node.js</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Mark Sheet Table Section -->
+        <section id="education" class="searchable-section space-y-6">
+            <div class="border-b border-slate-200 dark:border-slate-800 pb-4">
+                <h3 class="text-3xl font-bold tracking-tight">Academic Background</h3>
+                <p class="text-sm text-slate-500 mt-1">Overview of education milestones and marks.</p>
+            </div>
+            <div class="overflow-x-auto bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 p-2 shadow-sm">
+                <!-- Simple border applied directly via CSS border rules -->
+                <table style="border-collapse: collapse; width: 100%; text-align: left;" border="1" class="border-slate-300 dark:border-slate-700">
+                    <thead>
+                        <tr class="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+                            <th class="p-3 border border-slate-300 dark:border-slate-700">S.N.</th>
+                            <th class="p-3 border border-slate-300 dark:border-slate-700">Level</th>
+                            <th class="p-3 border border-slate-300 dark:border-slate-700">Completion Date</th>
+                            <th class="p-3 border border-slate-300 dark:border-slate-700">Institution</th>
+                            <th class="p-3 border border-slate-300 dark:border-slate-700">Graduation Marks (Out of 100)</th>
+                            <th class="p-3 border border-slate-300 dark:border-slate-700">GPA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+                            <td class="p-3 border border-slate-300 dark:border-slate-700">1</td>
+                            <td class="p-3 border border-slate-300 dark:border-slate-700">School</td>
+                            <td class="p-3 border border-slate-300 dark:border-slate-700">2079</td>
+                            <td class="p-3 border border-slate-300 dark:border-slate-700">Kshityz School</td>
+                            <td class="p-3 border border-slate-300 dark:border-slate-700">85</td>
+                            <td class="p-3 border border-slate-300 dark:border-slate-700 font-semibold text-brand-600">A</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+                            <td class="p-3 border border-slate-300 dark:border-slate-700">2</td>
+                            <td class="p-3 border border-slate-300 dark:border-slate-700">+2</td>
+                            <td class="p-3 border border-slate-300 dark:border-slate-700">2082</td>
+                            <td class="p-3 border border-slate-300 dark:border-slate-700">Liverpool S.S College</td>
+                            <td class="p-3 border border-slate-300 dark:border-slate-700">90</td>
+                            <td class="p-3 border border-slate-300 dark:border-slate-700 font-semibold text-brand-600">A+</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+                            <td class="p-3 border border-slate-300 dark:border-slate-700">3</td>
+                            <td class="p-3 border border-slate-300 dark:border-slate-700">Bachelor</td>
+                            <td class="p-3 border border-slate-300 dark:border-slate-700">2085</td>
+                            <td class="p-3 border border-slate-300 dark:border-slate-700">Model Institute of Technology</td>
+                            <td class="p-3 border border-slate-300 dark:border-slate-700">78</td>
+                            <td class="p-3 border border-slate-300 dark:border-slate-700 font-semibold text-brand-600">B+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="searchable-section grid grid-cols-1 lg:grid-cols-2 gap-10 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl p-8 sm:p-12 shadow-sm">
+            <div class="space-y-6">
+                <h4 class="text-3xl font-bold tracking-tight">Contact Me</h4>
+                <p class="text-slate-600 dark:text-slate-300 leading-relaxed">
+                    If you would like to get in touch with me, please feel free to reach out via email at <a href="mailto:sapkotamandeep4@gmail.com" class="text-brand-600 dark:text-brand-400 font-medium underline">sapkotamandeep4@gmail.com</a> or fill out the contact form.
+                </p>
+
+                <!-- Follow Me On Section -->
+                <div class="pt-4 space-y-3">
+                    <h5 class="text-sm font-semibold uppercase tracking-wider text-slate-500">Follow Me On</h5>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://instagram.com" target="_blank" class="flex items-center space-x-2 px-4 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-brand-50 dark:hover:bg-brand-900/30 rounded-xl transition-colors text-sm font-medium">
+                            <span class="w-2 h-2 rounded-full bg-pink-500"></span>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="https://github.com" target="_blank" class="flex items-center space-x-2 px-4 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-brand-50 dark:hover:bg-brand-900/30 rounded-xl transition-colors text-sm font-medium">
+                            <span class="w-2 h-2 rounded-full bg-slate-800 dark:bg-white"></span>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="flex items-center space-x-2 px-4 py-2 bg-slate-100 dark:bg-slate-800 hover:bg-brand-50 dark:hover:bg-brand-900/30 rounded-xl transition-colors text-sm font-medium">
+                            <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <form id="contactForm" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium mb-1">Name:</label>
+                    <input type="text" id="name" name="name" required class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium mb-1">Email:</label>
+                    <input type="email" id="email" name="email" required class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+                </div>
+                <div>
+                    <label for="password" class="block text-sm font-medium mb-1">Password:</label>
+                    <input type="password" id="password" name="password" required class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium mb-1">Message:</label>
+                    <textarea id="message" name="message" rows="3" required class="w-full bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-500"></textarea>
+                </div>
+                <button type="submit" class="w-full py-3 bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-xl shadow-md transition-all">Submit Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="mt-20 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 py-8 text-center text-sm text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 space-y-2">
+            <p>&copy; 2026 Mandip Sapkota. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Dark / Light Theme Toggle handler
+            const themeToggleBtn = document.getElementById('themeToggle');
+            const htmlElement = document.documentElement;
+
+            // Check stored theme or system preference
+            if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                htmlElement.classList.add('dark');
+            } else {
+                htmlElement.classList.remove('dark');
+            }
+
+            themeToggleBtn.addEventListener('click', () => {
+                if (htmlElement.classList.contains('dark')) {
+                    htmlElement.classList.remove('dark');
+                    localStorage.setItem('theme', 'light');
+                } else {
+                    htmlElement.classList.add('dark');
+                    localStorage.setItem('theme', 'dark');
+                }
+            });
+
+            // Live Content Search functionality
+            const searchInput = document.getElementById('searchInput');
+            const searchableSections = document.querySelectorAll('.searchable-section');
+
+            searchInput.addEventListener('input', (e) => {
+                const query = e.target.value.toLowerCase().trim();
+                
+                searchableSections.forEach(section => {
+                    const text = section.innerText.toLowerCase();
+                    if (query === '' || text.includes(query)) {
+                        section.style.display = '';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            });
+
+            // Contact Form submission handler without alert()
+            const contactForm = document.getElementById('contactForm');
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const submitBtn = contactForm.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerText;
+                
+                submitBtn.innerText = 'Message Sent Successfully!';
+                submitBtn.classList.remove('bg-brand-600', 'hover:bg-brand-700');
+                submitBtn.classList.add('bg-emerald-600');
+                
+                contactForm.reset();
+
+                setTimeout(() => {
+                    submitBtn.innerText = originalText;
+                    submitBtn.classList.remove('bg-emerald-600');
+                    submitBtn.classList.add('bg-brand-600', 'hover:bg-brand-700');
+                }, 4000);
+            });
+        });
+    </script>
+</body>
+</html>

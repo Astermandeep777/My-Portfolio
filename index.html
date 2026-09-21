@@ -1,51 +1,148 @@
 <html>
     <head> 
-        <title>My Website</title>  </head>
+        <title>Mandip Sapkota - Portfolio</title>
+    </head>
     <body>
-        <img src="images/logo.png" alt="Logo" width="80" height="80"> <br>
-        <div>
-            <nav>
-        <ul>
-            <li><a href="/#">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/projects.html">Projects</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-        </ul>
-            </nav>
-        </div>
 
-        <h1>Welcome to My Website</h1>
+        <!-- 1st: Logo -->
+        <img src="images/logo.png" alt="Logo" width="80" height="80">
+        <br><br>
 
-        <p><b>This is a sample website created for demonstration purposes.</b><br> <b>In this Paragraph there is a short introduction about me </b><br>.</p>
-        <p>My name is Mandip Sapkota, and I am a web developer with a passion for creating user-friendly websites. I have experience in HTML, CSS, and JavaScript, and I enjoy learning new technologies to enhance my skills.</p>
-        
-        <h2>My Projects</h2>
-        <h4>Project 1: Portfolio Website</h4>
-        <h3>My Skills</h3>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-        </ul>
-        <h4>Contact Me</h4>
-        <p>If you would like to get in touch with me, please feel free to reach out via email at <a href="mailto:sapkotamandeep4@gmail.com">sapkotamandeep4@gmail.com</a>.</p>
+        <!-- 2nd: Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
 
+        <!-- 3rd: Search Bar -->
         <form>
-            <input type="text" placeholder="Search..." >
-            <button type="submit">Search</button> <br>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password"><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message"></textarea><br>
-            <input type="submit" value="Submit">
+            <input type="text" placeholder="Search website...">
+            <button type="submit">Search</button>
         </form>
+        <br>
 
+        <!-- 4th: About -->
+        <section id="about">
+            <h1>Welcome to My Website</h1>
+            <p><b>This is a sample website created for demonstration purposes.</b><br>
+            <b>In this Paragraph there is a short introduction about me:</b></p>
+            <p>My name is Mandip Sapkota, and I am a web developer with a passion for creating user-friendly websites. I have experience in HTML, CSS, and JavaScript, and I enjoy learning new technologies to enhance my skills.</p>
+        </section>
+
+        <!-- 5th: Projects -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            <h4>Project 1: Portfolio Website</h4>
+            <p>A personal portfolio website to showcase my background, skills, and projects.</p>
+        </section>
+
+        <!-- 7th: Skills -->
+        <section id="skills">
+            <h3>My Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
+        </section>
+
+        <!-- Academic Record / Mark Sheet Table -->
+        <section id="education">
+            <h3>Academic Background</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>S.N.</th>
+                        <th>Level</th>
+                        <th>Completion Date</th>
+                        <th>Institution</th>
+                        <th>Graduation Marks (Out of 100)</th>
+                        <th>GPA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>School</td>
+                        <td>2079</td>
+                        <td>Kshityz School</td>
+                        <td>85</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>+2</td>
+                        <td>2082</td>
+                        <td>Liverpool S.S College</td>
+                        <td>90</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Bachelor</td>
+                        <td>2085</td>
+                        <td>Model Institute of Technology</td>
+                        <td>78</td>
+                        <td>B+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <br>
+
+        <!-- 6th: Contact Form & Info -->
+        <section id="contact">
+            <h4>Contact Me</h4>
+            <p>If you would like to get in touch with me, please feel free to reach out via email at <a href="mailto:sapkotamandeep4@gmail.com">sapkotamandeep4@gmail.com</a>.</p>
+
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password"><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <br>
+
+        <!-- 8th: Follow Me On (Social Links with image placeholders) -->
+        <section>
+            <h4>Follow Me On</h4>
+            <p>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/insta-icon.png" alt="Instagram" width="30" height="30"> Instagram
+                </a><br>
+                <a href="https://github.com" target="_blank">
+                    <img src="images/github-icon.png" alt="GitHub" width="30" height="30"> GitHub
+                </a><br>
+                <a href="https://linkedin.com" target="_blank">
+                    <img src="images/linkedin-icon.png" alt="LinkedIn" width="30" height="30"> LinkedIn
+                </a>
+            </p>
+        </section>
+
+        <!-- 9th: Copyright Footer -->
+        <footer>
+            <hr>
+            <p>&copy; 2026 Mandip Sapkota. All rights reserved.</p>
+        </footer>
 
     </body>
 </html>
